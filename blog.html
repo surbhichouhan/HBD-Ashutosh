@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- Template by freewebsitetemplates.com -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>It's your Birthday </title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="css/ie6.css" media="all" />
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/ie7.css" media="all" />
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<style>
+	 main {
+  width: 100%;
+  height: 100%;
+  margin-top: 15%;
+  padding: 0;
+  
+}
+
+#carousel {
+  margin-top: 5%;
+  position: relative;
+  height: 500px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+.buttons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+ 
+}
+#prev,#next{
+	background-color: rgb(95, 14, 57);
+	color: white;
+	font-size: large;
+	
+}
+
+</style>
+</head>
+<body>
+	<div id="header">
+		<ul>
+			<li ><a href="index.html">home</a></li>
+			<li><a href="moments.html">Moments</a></li>
+			<li><a href="handling.html">Best Wishes</a></li>
+			<li><a href="about.html">Gallery</a></li>
+			<li class="selected"><a href="blog.html">something for you</a></li>	
+		</ul>
+		<div class="logo">
+			<!-- <a href="index.html"><img src="images/logo.gif" alt="" /></a> -->
+			
+		</div>
+
+	</div>
+	<div id="body">
+		<main>
+
+			<div id="carousel">
+		
+			   <div class="hideLeft">
+				<img src="images/sfu/s1.jpg" alt="">
+				
+			  </div>
+		
+			  <div class="prevLeftSecond">
+				<img src="images/sfu/s2.jpg" alt="">
+			  </div>
+		
+			  <div class="prev">
+				<img src="images/sfu/s3.jpg" alt="">
+			  </div>
+		
+			  <div class="selected">
+				<img src="images/sfu/s4.jpg" alt="">
+			  </div>
+		
+			  <div class="next">
+				<img src="images/sfu/s5.jpg" alt="">
+			  </div>
+		
+			  <div class="nextRightSecond">
+				<img src="images/sfu/s6.jpg" alt="">
+			  </div>
+		
+			  <div class="hideRight">
+				<img src="images/sfu/s7.jpg" alt="">
+			  </div>
+
+			  <div class="hideRight">
+				<img src="images/sfu/s8.jpg" alt="">
+			  </div>
+
+			  <div class="hideRight">
+				<img src="images/sfu/s9.jpg" alt="">
+			  </div>
+
+			  <div class="hideRight">
+				<img src="images/sfu/s10.jpg" alt="">
+			  </div>
+
+			  <div class="hideRight">
+				<img src="images/sfu/s11.jpg" alt="">
+			  </div>
+
+			  <div class="hideRight">
+				<img src="images/sfu/s12.jpg" alt="">
+			  </div>
+
+		
+			</div>
+		
+			<div class="buttons">
+			  <button id="prev">Prev</button>
+			  <button id="next">Next</button>
+			</div>
+		
+		  </main>
+		<!-- <div class="blog">
+			<h1>blog</h1>
+			<div>
+				<h3>This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text.</h3>
+				<p>You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forum">Forum</a>.</p>		
+				<img src="images/garden2.jpg" alt="" />	
+				<p>Looking for more templates? Just browse through all our <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> and find what you’re looking for. But if you don’t find any website template you can use, you can try our <a href="http://www.freewebsitetemplates.com/freewebdesign/">Free Web Design</a> service and tell us all about it. Maybe you’re looking for something different, something special. And we love the challenge of doing something different and something special.</p>
+			</div>		
+			<ul>
+				<li>
+					<h3>This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa sem, egestasgravida, posuere necest.</p>
+				</li>
+				<li>
+					<h3>You can replace all this text with your own text.</h3>
+					<p>Ut eget sollicitudin nulla. Maecenas interdum nunc eget libero porta at facilisis odio hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</li>
+				<li>
+					<h3>You can remove any link to our website from this website template, you're free to use this website template without linking back to us.</h3>
+					<p>Morbi convallis feugiat elit, nec vulputate felis volutpat eget.</p>
+				</li>
+				<li>
+					<h3>If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forum">Forum</a>.</h3>
+					<p>Curabitur ullamcorper imperdiet risus, eu fermentum enim pharetra vel.</p>	
+				</li>		
+			</ul>
+		</div> -->
+	</div>
+	<div id="footer">
+		<div>
+			<div class="connect">
+				<!-- <h4>Follow us:</h4> -->
+				<ul>
+					<!-- <li class="facebook"><a href="http://facebook.com/freewebsitetemplates" target="_blank">facebook</a></li>
+					<li class="twitter"><a href="http://twitter.com/fwtemplates" target="_blank">twitter</a></li>		 -->
+				</ul>
+			</div>
+			<!-- <p>Copyright &copy; 2012. All rights reserved.</p> -->
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		
+function moveToSelected(element) {
+
+if (element == "next") {
+  var selected = $(".selected").next();
+} else if (element == "prev") {
+  var selected = $(".selected").prev();
+} else {
+  var selected = element;
+}
+
+var next = $(selected).next();
+var prev = $(selected).prev();
+var prevSecond = $(prev).prev();
+var nextSecond = $(next).next();
+
+$(selected).removeClass().addClass("selected");
+
+$(prev).removeClass().addClass("prev");
+$(next).removeClass().addClass("next");
+
+$(nextSecond).removeClass().addClass("nextRightSecond");
+$(prevSecond).removeClass().addClass("prevLeftSecond");
+
+$(nextSecond).nextAll().removeClass().addClass('hideRight');
+$(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+}
+
+// Eventos teclado
+$(document).keydown(function(e) {
+  switch(e.which) {
+	  case 37: // left
+	  moveToSelected('prev');
+	  break;
+
+	  case 39: // right
+	  moveToSelected('next');
+	  break;
+
+	  default: return;
+  }
+  e.preventDefault();
+});
+
+$('#carousel div').click(function() {
+moveToSelected($(this));
+});
+
+$('#prev').click(function() {
+moveToSelected('prev');
+});
+
+$('#next').click(function() {
+moveToSelected('next');
+});
+	</script>
+	<script type="text/javascript">
+		
+
+		</script>
+</body>
+</html>
